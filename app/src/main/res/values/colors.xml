@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#BF360C</color>
+
+    <!--Detail View and BackGround Colors-->
+    <color name="background_app">#212121</color>
+    <color name="detail_view_text_title">#08C421</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="color_movie_loading">#795548</color>
+
+    <!--Color For Empty TextView Texts-->
+    <color name="empty_view">#A2AAB0</color>
+</resources>

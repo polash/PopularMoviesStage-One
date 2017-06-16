@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Movies</string>
+
+    <!--Sort order menu items in MainActivity-->
+    <string name="sort_title">Sort</string>
+    <string name="pop_movies">Most Popular</string>
+    <string name="top_movies">Highest Rated</string>
+
+    <!--Empty View Title texts-->
+    <string name="empty_view_title_text">Whoops!</string>
+    <string name="empty_view_subtitle_text">\t\tNo Internet Connection found.\nCheck your connection or try again</string>
+
+    <!--Movie Detail View Contents-->
+    <string name="title">Original Title</string>
+    <string name="release_date">Release Date</string>
+    <string name="movie_rating">Movie Rating</string>
+    <string name="movie_rating_content">/10</string>
+    <string name="overview">Movie Overview</string>
+
+</resources>
