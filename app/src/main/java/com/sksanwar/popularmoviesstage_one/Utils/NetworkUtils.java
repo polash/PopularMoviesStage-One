@@ -92,6 +92,7 @@ public class NetworkUtils {
 
         HttpURLConnection urlConnection = null;
         InputStream inputStream = null;
+
         try {
             urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod("GET");
@@ -102,9 +103,7 @@ public class NetworkUtils {
             //now need to check weather the connection is successful or not
             if (urlConnection.getResponseCode() == 200) {
 
-                inputStream = urlConnection.getInputStream();
-
-                jsonResponse = readFromStream(inputStream);
+                jsonResponse = readFromStream(urlConnection.getInputStream());
             } else {
                 Log.e(TAG, "Error response code: " + urlConnection.getResponseCode());
             }

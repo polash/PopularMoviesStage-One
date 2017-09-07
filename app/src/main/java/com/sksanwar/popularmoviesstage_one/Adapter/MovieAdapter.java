@@ -87,7 +87,7 @@ public class MovieAdapter extends
         public ViewHolder(View itemView) {
 
             super(itemView);
-            imageView = (ImageView) itemView.findViewById(R.id.item_image_id);
+            imageView = itemView.findViewById(R.id.item_image_id);
             itemView.setOnClickListener(this);
         }
 

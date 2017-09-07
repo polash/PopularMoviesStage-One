@@ -56,7 +56,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     /**
-     * viewholder class for the views
+     * view holder class for the views
      */
     static class Viewholder {
         ImageView backDropsImageView;

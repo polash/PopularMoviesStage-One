@@ -25,6 +25,9 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 import static com.sksanwar.popularmoviesstage_one.Utils.DataParsing.getMovieDataFromJson;
 
 
@@ -43,10 +46,12 @@ public class MainActivity extends AppCompatActivity
     /**
      * Views variable
      **/
-    private RecyclerView mRecyclerView;
-    private MovieAdapter adapter;
-    private ProgressBar mLoadingIndicator;
-    private View emptyView;
+    @BindView(R.id.recyclerView_image)
+    RecyclerView mRecyclerView;
+    @BindView(R.id.pb_loading_indicator)
+    ProgressBar mLoadingIndicator;
+    MovieAdapter adapter;
+    View emptyView;
 
     /**
      * OnCreate method where all the views are populated and adapter is seted
@@ -57,9 +62,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView_image);
-        mLoadingIndicator = (ProgressBar) findViewById(R.id.pb_loading_indicator);
+        ButterKnife.bind(this);
 
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setItemViewCacheSize(viewCacheSize);
